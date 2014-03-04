@@ -35,6 +35,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
     },
+    
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
@@ -43,6 +44,9 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
+        
+
+        
 		        var beaconManager = new BeaconManager();
         var beaconsList = document.getElementById('beacons');
         beaconManager.startPulling(1000);
@@ -51,6 +55,7 @@ var app = {
 
             if(item) {
                 item.innerText = beacon.major + '/' + beacon.minor + ' - ' + formatDistance(beacon.distance);
+                        navigator.notification.alert('test', alertDismissed, "test", "done");
             }
         });
         beaconManager.on('added', function(beacon) {
@@ -76,4 +81,8 @@ function formatDistance(meters) {
     } else {
         return (meters * 100).toFixed(3) + ' cm';
     }
+}
+
+function alertDismissed(){
+	
 }

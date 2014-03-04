@@ -43,6 +43,10 @@
 		7A1145C61D5A460298FB9464 /* EstimoteBeacons.m in Sources */ = {isa = PBXBuildFile; fileRef = A80D6E81C13147B3B2B0C603 /* EstimoteBeacons.m */; };
 		E9DD6152F5B64D9F86B3EF87 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DE405BE70F407E894CE6AC /* CoreBluetooth.framework */; };
 		4DA11D63ADF94261BF6C260B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F266D4DF94DC47CBA8CCA0A5 /* SystemConfiguration.framework */; };
+		862D3B164EB94E68966FF05C /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3CA33AE6B5444EA899EC31 /* CDVNotification.m */; };
+		5B97C2637F1C4C0F8548DF92 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6BA4341AA442D87938591 /* CDVNotification.bundle */; };
+		33B3FB8E7E894E139ECD98D1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BBD955E45C41C09979AFA1 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2B77AA5CB080447BAEC95385 /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = 68425C05118143308CFA1A1E /* CDVVibration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +122,12 @@
 		E2AF8E6DCF814FB6B2395F70 /* EstimoteBeacons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EstimoteBeacons.h"; path = "pl.makingwaves.estimotebeacons/EstimoteBeacons.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		82DE405BE70F407E894CE6AC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		F266D4DF94DC47CBA8CCA0A5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		BA3CA33AE6B5444EA899EC31 /* CDVNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVNotification.m"; path = "org.apache.cordova.dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		A9431C9CC8D74992BE9FA5FC /* CDVNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVNotification.h"; path = "org.apache.cordova.dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		5DB6BA4341AA442D87938591 /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; };
+		C1BBD955E45C41C09979AFA1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		68425C05118143308CFA1A1E /* CDVVibration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVVibration.m"; path = "org.apache.cordova.vibration/CDVVibration.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		8786705D6B8D458CB3D118DE /* CDVVibration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVVibration.h"; path = "org.apache.cordova.vibration/CDVVibration.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,7 @@
 				9E7FEF371051403A996BFABB /* libEstimoteSDK.a in Frameworks */,
 				E9DD6152F5B64D9F86B3EF87 /* CoreBluetooth.framework in Frameworks */,
 				4DA11D63ADF94261BF6C260B /* SystemConfiguration.framework in Frameworks */,
+				33B3FB8E7E894E139ECD98D1 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +225,7 @@
 				308D052D1370CCF300D202BF /* icons */,
 				308D05311370CCF300D202BF /* splash */,
 				8D1107310486CEB800E47090 /* Demo-Info.plist */,
+				5DB6BA4341AA442D87938591 /* CDVNotification.bundle */,
 			);
 			name = Resources;
 			path = "Demo/Resources";
@@ -229,6 +241,7 @@
 				7CA5AD0E5A3C486AA649664A /* libEstimoteSDK.a */,
 				82DE405BE70F407E894CE6AC /* CoreBluetooth.framework */,
 				F266D4DF94DC47CBA8CCA0A5 /* SystemConfiguration.framework */,
+				C1BBD955E45C41C09979AFA1 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -252,6 +265,10 @@
 				8B36FE16E62D44BD9F264602 /* ESTBeaconRegion.h */,
 				ECB658DC73FB4B32AA072BC4 /* ESTBeaconUpdateInfo.h */,
 				E2AF8E6DCF814FB6B2395F70 /* EstimoteBeacons.h */,
+				BA3CA33AE6B5444EA899EC31 /* CDVNotification.m */,
+				A9431C9CC8D74992BE9FA5FC /* CDVNotification.h */,
+				68425C05118143308CFA1A1E /* CDVVibration.m */,
+				8786705D6B8D458CB3D118DE /* CDVVibration.h */,
 			);
 			name = Plugins;
 			path = "Demo/Plugins";
@@ -415,6 +432,7 @@
 				7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */,
 				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
+				5B97C2637F1C4C0F8548DF92 /* CDVNotification.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +466,8 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				6139C9C18C864EBF8F99063E /* libEstimoteSDK.a in Frameworks */,
 				7A1145C61D5A460298FB9464 /* EstimoteBeacons.m in Sources */,
+				862D3B164EB94E68966FF05C /* CDVNotification.m in Sources */,
+				2B77AA5CB080447BAEC95385 /* CDVVibration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
